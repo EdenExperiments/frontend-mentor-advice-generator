@@ -11,29 +11,33 @@
 
 </head>
 <body>
-
-  <div class="container">
-    <p id="Id">ADVICE #<span id="IdNo"></span></p>
-    <p id="Advice">Click the dice below to get some advice!</p>
-
-    <picture id="divider">
-      <source media="(max-width: 1023px)" srcset="images/pattern-divider-mobile.svg">
-      <img src="images/pattern-divider-desktop.svg" alt="" />
-    </picture>
-
-    <button type="button" class="diceContainer" onClick="javascript:generateAdvice()"  aria-label="Generate Advice">
-      <picture id="dice">
-        <img src="images/icon-dice.svg" alt="Dice to generate advice" /> 
-      </picture>
-    </button>
-  </div>
-
-  <small id="resetInfo">2 seconds required between advice requests</small>
+  <main>
+    <div class="container">
+      <p id="Id">ADVICE #<span id="IdNo"></span></p>
+      <p id="Advice">Click the dice below to get some advice!</p>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/EdenExperiments" target="_blank">Macaulay Eden</a>.
-  </div>
+      <picture id="divider">
+        <source media="(max-width: 1023px)" srcset="images/pattern-divider-mobile.svg">
+        <img src="images/pattern-divider-desktop.svg" alt="" />
+      </picture>
+  
+      <button type="button" class="diceContainer" onClick="javascript:generateAdvice()"  aria-label="Generate Advice">
+        <picture id="dice">
+          <img src="images/icon-dice.svg" alt="Dice to generate advice" /> 
+        </picture>
+      </button>
+    </div>
+  
+    <small id="resetInfo">2 seconds required between advice requests</small>   
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/EdenExperiments" target="_blank">Macaulay Eden</a>.
+    </div>
+  </footer>
+
 
   <script src="index.js" type="text/javascript"></script>
 </body>
